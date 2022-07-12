@@ -1,0 +1,36 @@
+body {
+  background-color: #df861d;
+}
+
+h1 {
+  font-size: 55px;
+  color: white;
+  position: absolute;
+  top: -15px;
+  left: 30px;
+}
+
+h2.home {
+  font-size: 25px;
+  color: white;
+  position: absolute;
+  top: 10px;
+  left: 85%;
+}
+
+h2.about {
+  font-size: 25px;
+  color: white;
+  position: absolute;
+  top: 10px;
+  left: 93%;
+}
+
+.icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  position: relative;
+  top: -10px;
+}
