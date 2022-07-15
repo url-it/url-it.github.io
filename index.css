@@ -1,5 +1,5 @@
 body {
-  background-color: #df861d;
+  background-color: #231955;
 }
 
 h1 {
@@ -33,4 +33,8 @@ h2.about {
   width: 50%;
   position: relative;
   top: -10px;
+}
+
+.twitter {
+size: 1in;
 }
