@@ -7,14 +7,17 @@
     <link rel="stylesheet" href="index.css">
     <link rel="html" href="about_me.html">
     <script src="index.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <title>awebsite</title>   
 </head>    
 <body>
-        <div class="twitter">
+        <!--<div class="twitter">
             <a href="https://twitter.com/awebsite_" target="_blank">
                     <img src="Twt.png" alt="twitter">
             </a>
         </div>
+    
         <div class="instagram">
             <a href="https://www.instagram.com/awebsite_/" target="_blank"><button>Instagram</button></a>
         </div>
@@ -23,10 +26,29 @@
         </div>
     <!--<h2 class="home">Home</h2>-->
     <!--<h2 class="about"> <a href="about_me.html">About</a></h2>-->
-    <div class="icon">
-        <a href="about_me.html">
-        <img src="icon.png" alt="Uziel" class="icon">
-        </a>
-    </div>
+   <!-- <div class="icon">
+        <img src="icon.png" width="250px" alt="Uziel" class="icon">
+    </div> -->
+
+    <div class="menu">
+        <div class="toggle">
+            <img src="icon.png" width="250px" alt="Uziel" class="icon">
+        </div>
+        <li style="--i:0;">
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+        </li>
+        <li style="--i:1;">
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+        </li>
+        <li style="--i:3;">
+            <a href="#"><ion-icon name="person-outline"></ion-icon></a>
+        </li>
+        <li style="--i:2;">
+            <a href="#"><ion-icon name="logo-tiktok"></ion-icon></a>
+        </li>   
+        <li style="--i:4;">
+            <a href="#"><ion-icon name="mail-outline"></ion-icon></a>
+        </li>
+        </div>
 </body>
 </html>
