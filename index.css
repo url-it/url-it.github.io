@@ -1,39 +1,27 @@
-body {
-min-height: 100vh;
-background: linear-gradient(45deg, darkgray 50%, lightgray 50%); /* W3C */
-display: flex;
-justify-content: center;
-align-items: center;
-}
-/* for the icon of myself */
-.icon {
- size: 90px;
+body{
+  background-color: #222222;
 }
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.menu{
-  position: relative;
-  width: 200px;
-  height: 200px;
-  background: #0f0;
+.Title{
+  color: white;
+  font-style: bold;
+  font-family: 'Orbitron', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: .75in;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
-.menu li{
-  position: absolute;
-  list-style: none;
-}
+a.github{
+  color: white;
+  /* put this on the same line as the title */
+  display: flex;
+  justify-content: left;
+  align-items: left;
 
-.toggle{
-   position: absolute;
-   width: 60px;
-   height: 60px;
-    background: #fff;
 }
+ 
