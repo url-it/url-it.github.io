@@ -2,26 +2,39 @@ body{
   background-color: #222222;
 }
 
-.Title{
-  color: white;
-  font-style: bold;
-  font-family: 'Orbitron', sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: .75in;
+h1{
+  color: #FFFDD0;
+  text-align: center;
   user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
+  font-size: 4em;
+  padding: none;
+  margin: none;
 }
 
-a.github{
-  color: white;
-  /* put this on the same line as the title */
-  display: flex;
-  justify-content: left;
-  align-items: left;
-
+h2{
+  color: #FFFDD0;
 }
- 
+
+.projectBar{
+  text-align: center;
+}
+
+/* Formats the text along with the box positions */
+.projectBox {
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 3%;
+  width: 30%;
+}
+
+/* This affects the box sizes and shapes */
+.projectBox .box {
+  background-color: #FFFDD0;
+  height: 250px;
+  margin-top: 30px;
+}
+
+
+
+
+
