@@ -3,24 +3,11 @@ body{
 }
 
 /* Center the title and put the navbox in top right corner */
-h1{
-  color: #FFFDD0;
-  text-align: center;
-  user-select: none;
-  font-size: 4em;
-  padding: none;
-  margin: none;
+
+.container{
+  width: 80%;
+  margin: 0 auto;
 }
-
-.navBox{
-  position: absolute;
-  top: 0;
-  right: 0;
-  color: #FFFDD0;
-
-}
-
-
 
 h2{
   color: #FFFDD0;
@@ -63,9 +50,10 @@ h2{
 }
 
 .socialBar .socialBox{
-  height: 100px;
-  width: 250px;
-  background-color: white;
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 3%;
+  width: 30%;
 }
 
 
