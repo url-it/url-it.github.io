@@ -2,6 +2,7 @@ body{
   background-color: #222222;
 }
 
+/* Center the title and put the navbox in top right corner */
 h1{
   color: #FFFDD0;
   text-align: center;
@@ -10,6 +11,16 @@ h1{
   padding: none;
   margin: none;
 }
+
+.navBox{
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #FFFDD0;
+
+}
+
+
 
 h2{
   color: #FFFDD0;
@@ -32,6 +43,29 @@ h2{
   background-color: #FFFDD0;
   height: 250px;
   margin-top: 30px;
+}
+
+/* Description box sizing and shape */
+.projectBox .descriptBox{
+  margin-top: 3%;
+  background-color: blue;
+  height: 100px;
+}
+
+.socialBar{
+  margin-top: 3%;
+  position: absolute;
+
+  bottom: 0;
+  top: 88%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.socialBar .socialBox{
+  height: 100px;
+  width: 250px;
+  background-color: white;
 }
 
 
