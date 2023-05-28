@@ -1,20 +1,88 @@
-body{
+body {
+  margin: 0;
   background-color: #222222;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 600;
 }
 
 /* Center the title and put the navbox in top right corner */
 
-.container{
+.container {
   width: 80%;
+  color: #222222;
   margin: 0 auto;
 }
 
-h2{
-  color: #FFFDD0;
+header {
+  background-color: #fffdd0;
 }
 
-.projectBar{
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.helloWrld {
+  float: left;
+  font-size: 2.5em;
+  user-select: none;
+  padding: 10px 0;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 53px;
+  position: relative;
+}
+
+nav a {
+  color: #222222;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #222222;
+  text-decoration: underline;
+}
+
+/* These are the bars on top, just for learning purposes don't add to final product */
+
+nav a::before {
+  content: "";
+  display: block;
+  height: 6px;
+  width: 100%;
+  background-color: #222222;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+  transition: width 0.2s;
+}
+
+/* All the boxes where my projects will be show cased  */
+.projectBar {
+  color: #fffdd0;
   text-align: center;
+  /* user-select: none;  <-- will have to determine later if this is necessary*/
 }
 
 /* Formats the text along with the box positions */
@@ -27,36 +95,14 @@ h2{
 
 /* This affects the box sizes and shapes */
 .projectBox .box {
-  background-color: #FFFDD0;
+  background-color: #fffdd0;
   height: 250px;
   margin-top: 30px;
 }
 
 /* Description box sizing and shape */
-.projectBox .descriptBox{
+.projectBox .descriptBox {
   margin-top: 3%;
   background-color: blue;
   height: 100px;
 }
-
-.socialBar{
-  margin-top: 3%;
-  position: absolute;
-
-  bottom: 0;
-  top: 88%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.socialBar .socialBox{
-  display: inline-block;
-  margin-right: 10px;
-  margin-top: 3%;
-  width: 30%;
-}
-
-
-
-
-
