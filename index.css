@@ -5,33 +5,79 @@ body {
   font-weight: 600;
 }
 
-/* Center the title and put the navbox in top right corner */
-
+/* Nav bar */
 .container {
   width: 80%;
   color: #222222;
   margin: 0 auto;
 }
 
+/* This creates the variable background color */
+
+:root {
+  --headercolor: #fffdd0;
+}
+
 header {
-  background-color: #fffdd0;
+  background: var(--headercolor);
+  text-align: center;
+  /* This creates the one bar thing to be in place. Do it only in mobile */
+  position: fixed;
+  z-index: 999;
+  width: 100%;
 }
 
-header::after {
+/* Hamburger menu */
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 1em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: black;
+  height: 2px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
   content: "";
-  display: table;
-  clear: both;
+  position: absolute;
 }
 
-.helloWrld {
-  float: left;
-  font-size: 2.5em;
-  user-select: none;
-  padding: 10px 0;
+.nav-toggle-label span::before {
+  bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+  top: 7px;
 }
 
 nav {
-  float: right;
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background: var(--headercolor);
+  width: 100%;
+  /* animation check nav-toggle ~ nav */
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
 }
 
 nav ul {
@@ -41,41 +87,33 @@ nav ul {
 }
 
 nav li {
-  display: inline-block;
-  margin-left: 70px;
-  padding-top: 53px;
-  position: relative;
+  margin-bottom: 1em;
+  margin-left: 1em;
 }
 
 nav a {
-  color: #222222;
   text-decoration: none;
+  color: #222222;
+  font-size: 1.2rem;
   text-transform: uppercase;
-  font-size: 14px;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
 }
 
 nav a:hover {
-  color: #222222;
-  text-decoration: underline;
+  color: lightgray;
 }
 
-/* These are the bars on top, just for learning purposes don't add to final product */
-
-nav a::before {
-  content: "";
-  display: block;
-  height: 6px;
-  width: 100%;
-  background-color: #222222;
-  position: absolute;
-  top: 0;
-  width: 0%;
-  transition: all ease-in-out 250ms;
+.nav-toggle:checked ~ nav {
+  transform: scale(1, 1);
 }
 
-nav a:hover::before {
-  width: 100%;
-  transition: width 0.2s;
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+
+@media screen and (min-width: 900px) {
 }
 
 /* All the boxes where my projects will be show cased  */
