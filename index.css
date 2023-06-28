@@ -13,7 +13,6 @@ body {
 }
 
 /* This creates the variable background color */
-
 :root {
   --headercolor: #fffdd0;
 }
@@ -25,6 +24,10 @@ header {
   position: fixed;
   z-index: 999;
   width: 100%;
+}
+
+.logo {
+  user-select: none;
 }
 
 /* Hamburger menu */
@@ -114,6 +117,71 @@ nav a:hover {
 }
 
 @media screen and (min-width: 900px) {
+  /* I want to make the logo to the left top side and the rest of the nav stuff on the right */
+  .nav-toggle-label {
+    display: none;
+  }
+
+  nav {
+    position: relative;
+    text-align: left;
+    top: 0;
+    left: 0;
+    background: none;
+    width: auto;
+    transform: scale(1, 1);
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  nav li {
+    margin-left: 3em;
+    margin-bottom: 0;
+  }
+
+  nav a {
+    opacity: 1;
+    position: relative;
+  }
+
+  nav a::before {
+    content: "";
+    display: block;
+    height: 5px;
+    background: black;
+    position: absolute;
+    top: 1.5em;
+    left: 0;
+    right: 0;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 250ms;
+  }
+
+  nav a:hover::before {
+    transform: scale(1, 1);
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    order: 1;
+    user-select: none;
+  }
+
+  nav {
+    order: 2;
+    width: auto;
+  }
+
+  header {
+    position: relative;
+  }
 }
 
 /* All the boxes where my projects will be show cased  */
