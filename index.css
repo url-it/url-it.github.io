@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: #222222;
+  background-color: #001c30;
   font-family: "Orbitron", sans-serif;
   font-weight: 600;
 }
@@ -8,17 +8,19 @@ body {
 /* Nav bar */
 .container {
   width: 80%;
-  color: #222222;
+  color: var(--textColor);
   margin: 0 auto;
 }
 
 /* This creates the variable background color */
 :root {
-  --headercolor: #fffdd0;
+  --mainColor: #176b87;
+  --secColor: #64ccc5;
+  --textColor: #dafffb;
 }
 
 header {
-  background: var(--headercolor);
+  background: var(--mainColor);
   text-align: center;
   /* This creates the one bar thing to be in place. Do it only in mobile */
   position: fixed;
@@ -50,7 +52,7 @@ header {
 .nav-toggle-label span::after {
   display: block;
   background: black;
-  height: 2px;
+  height: 3px;
   width: 2em;
   border-radius: 2px;
   position: relative;
@@ -63,19 +65,21 @@ header {
 }
 
 .nav-toggle-label span::before {
-  bottom: 7px;
+  bottom: 8px;
 }
 
 .nav-toggle-label span::after {
-  top: 7px;
+  top: 8px;
 }
+
+/* <-----------> */
 
 nav {
   position: absolute;
   text-align: left;
   top: 100%;
   left: 0;
-  background: var(--headercolor);
+  background: var(--mainColor);
   width: 100%;
   /* animation check nav-toggle ~ nav */
   transform: scale(1, 0);
@@ -104,7 +108,7 @@ nav a {
 }
 
 nav a:hover {
-  color: lightgray;
+  color: var(--textColor);
 }
 
 .nav-toggle:checked ~ nav {
@@ -150,7 +154,7 @@ nav a:hover {
     content: "";
     display: block;
     height: 5px;
-    background: black;
+    background: var(--textColor);
     position: absolute;
     top: 1.5em;
     left: 0;
@@ -186,8 +190,9 @@ nav a:hover {
 
 /* All the boxes where my projects will be show cased  */
 .projectBar {
-  color: #fffdd0;
+  color: var(--textColor);
   text-align: center;
+  user-select: none;
   /* user-select: none;  <-- will have to determine later if this is necessary*/
 }
 
@@ -201,7 +206,7 @@ nav a:hover {
 
 /* This affects the box sizes and shapes */
 .projectBox .box {
-  background-color: #fffdd0;
+  background-color: var(--mainColor);
   height: 250px;
   margin-top: 30px;
 }
@@ -209,6 +214,6 @@ nav a:hover {
 /* Description box sizing and shape */
 .projectBox .descriptBox {
   margin-top: 3%;
-  background-color: blue;
+  background-color: var(--secColor);
   height: 100px;
 }

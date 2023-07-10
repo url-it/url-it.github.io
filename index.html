@@ -4,6 +4,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
     <meta charset="utf-8">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel = "stylesheet" href = index.css>
     <script src = index.js></script>
@@ -14,7 +15,18 @@
 <body>
     <header>
         <div class="container">
-            <h1 class="logo">Hello World</h1>
+            <!-- <h1 class="logo">Hello World</h1> -->
+            <h1 class="logo"><span class="type"></span></h1>
+            <script>
+                var typed = new Typed(".type", {
+                    strings: ["Hello World", "Hola Mundo", "Bonjour Monde", "헬로 월드", "こんにちは世界","Hello World!"],
+                    typeSpeed: 150, 
+                    backSpeed: 50,
+                    loop: false,
+                    cursorChar:"_"
+
+                })
+            </script>
             <input type="checkbox" id="nav-toggle" class="nav-toggle">
             <nav>
                 <ul>
