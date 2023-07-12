@@ -120,8 +120,28 @@ nav a:hover {
   transition: opacity 250ms ease-in-out 250ms;
 }
 
-@media screen and (min-width: 900px) {
-  /* I want to make the logo to the left top side and the rest of the nav stuff on the right */
+/* Boxes */
+.projectBar {
+  color: var(--textColor);
+  text-align: center;
+  user-select: none;
+  padding-top: 5rem;
+}
+
+/* Put the box under the lastProject */
+.projectBox .box {
+  background-color: var(--mainColor);
+  height: 285px;
+  margin-top: 30px;
+}
+
+.projectBox .descriptBox {
+  margin-top: 1%;
+  background-color: var(--secColor);
+  height: 100px;
+}
+
+@media screen and (min-width: 890px) {
   .nav-toggle-label {
     display: none;
   }
@@ -186,34 +206,34 @@ nav a:hover {
   header {
     position: relative;
   }
-}
 
-/* All the boxes where my projects will be show cased  */
-.projectBar {
-  color: var(--textColor);
-  text-align: center;
-  user-select: none;
-  /* user-select: none;  <-- will have to determine later if this is necessary*/
-}
+  /* All the boxes where my projects will be show cased  */
+  .projectBar {
+    color: var(--textColor);
+    text-align: center;
+    user-select: none;
+    padding-top: 0;
+  }
 
-/* Formats the text along with the box positions */
-.projectBox {
-  display: inline-block;
-  margin-right: 10px;
-  margin-top: 3%;
-  width: 30%;
-}
+  /* Formats the text along with the box positions */
+  .projectBox {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 3%;
+    width: 30%;
+  }
 
-/* This affects the box sizes and shapes */
-.projectBox .box {
-  background-color: var(--mainColor);
-  height: 250px;
-  margin-top: 30px;
-}
+  /* This affects the box sizes and shapes */
+  .projectBox .box {
+    background-color: var(--mainColor);
+    height: 250px;
+    margin-top: 30px;
+  }
 
-/* Description box sizing and shape */
-.projectBox .descriptBox {
-  margin-top: 3%;
-  background-color: var(--secColor);
-  height: 100px;
+  /* Description box sizing and shape */
+  .projectBox .descriptBox {
+    margin-top: 3%;
+    background-color: var(--secColor);
+    height: 100px;
+  }
 }
