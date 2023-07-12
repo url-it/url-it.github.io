@@ -125,7 +125,7 @@ nav a:hover {
   color: var(--textColor);
   text-align: center;
   user-select: none;
-  padding-top: 5rem;
+  padding-top: 5.5rem;
 }
 
 /* Put the box under the lastProject */
