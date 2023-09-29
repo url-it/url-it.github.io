@@ -1,10 +1,10 @@
 /* This creates the variable background color */
 :root {
-  --mainColor: #183d3d;
-  --secColor: #64ccc5;
+  --mainColor: #242424;
+  --secColor: #373737;
   --textColor: #dafffb;
   --backgColor: #000;
-  --underLineColor: ;
+  --underLineColor: #fca311;
 }
 
 body {
@@ -53,7 +53,7 @@ header {
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
   display: block;
-  background: black;
+  background: var(--textColor);
   height: 3px;
   width: 2em;
   border-radius: 2px;
@@ -102,7 +102,7 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: #222222;
+  color: var(--textColor);
   font-size: 1.2rem;
   text-transform: uppercase;
   opacity: 0;
@@ -110,7 +110,7 @@ nav a {
 }
 
 nav a:hover {
-  color: var(--textColor);
+  color: var(--underLineColor);
 }
 
 .nav-toggle:checked ~ nav {
