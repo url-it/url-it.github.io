@@ -1,10 +1,13 @@
-/* This creates the variable background color */
 :root {
-  --mainColor: #242424;
-  --secColor: #373737;
+  --darkBanner: #242424;
   --textColor: #dafffb;
   --backgColor: #000;
   --underLineColor: #fca311;
+
+  /* Inverted */
+  --lightBanner: #dbdbdb;
+  --textColorDark: #250004;
+  --backgColor2: #ffffff;
 }
 
 body {
@@ -12,22 +15,32 @@ body {
   background-color: var(--backgColor);
   font-family: "Orbitron", sans-serif;
   font-weight: 600;
+  color: var(--textColor);
 }
 
-/* Nav bar */
+/* Light Mode */
+
+.lightMode {
+  background-color: var(--backgColor2);
+  color: var(--textColorDark);
+}
+
+/* Emd of Light Mode */
+
 .container {
   width: 80%;
-  color: var(--textColor);
+  /* color: var(--textColor); */
   margin: 0 auto;
 }
 
 header {
-  background: var(--mainColor);
+  background: var(--darkBanner);
   text-align: center;
   /* This creates the one bar thing to be in place. Do it only in mobile */
   position: fixed;
   z-index: 999;
   width: 100%;
+  top: 0;
 }
 
 .logo {
@@ -73,7 +86,6 @@ header {
 .nav-toggle-label span::after {
   top: 8px;
 }
-
 /* <-----------> */
 
 nav {
@@ -81,7 +93,7 @@ nav {
   text-align: left;
   top: 100%;
   left: 0;
-  background: var(--mainColor);
+  background: var(--darkBanner);
   width: 100%;
   /* animation check nav-toggle ~ nav */
   transform: scale(1, 0);
@@ -122,25 +134,64 @@ nav a:hover {
   transition: opacity 250ms ease-in-out 250ms;
 }
 
-/* Boxes */
-.projectBar {
-  color: var(--textColor);
+/* Ptoject Area */
+.projectArea {
   text-align: center;
-  user-select: none;
   padding-top: 5.5rem;
+  /* color: var(--textColor); */
+}
+
+.projectArea h2 {
+  user-select: none;
 }
 
 .projectBox .box {
-  background-color: #dafffb;
-  height: 285px;
-  margin-top: 30px;
+  background-color: #0129;
+  height: 400px;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .projectBox .descriptBox {
   margin-top: 1%;
-  background-color: var(--secColor);
+  background-color: var(--darkBanner);
   height: 100px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
+/* End of Project Area */
+
+/* Social Media */
+.socialMedia {
+  text-align: center;
+}
+
+.socialMedia ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  color: var(--textColor);
+  padding: 0;
+}
+
+.socialMedia a {
+  text-decoration: none;
+  margin: 0 20px;
+  color: var(--textColor);
+}
+
+.socialMedia img {
+  width: 35px;
+  height: 35px;
+  border: none;
+  opacity: 0.5;
+}
+
+.socialMedia img:hover {
+  opacity: 85%;
+}
+/* End of social media */
 
 @media screen and (min-width: 890px) {
   .nav-toggle-label {
@@ -209,32 +260,32 @@ nav a:hover {
   }
 
   /* All the boxes where my projects will be show cased  */
-  .projectBar {
+  /* .projectBar {
     color: var(--textColor);
     text-align: center;
     user-select: none;
     padding-top: 0;
-  }
+  } */
 
   /* Formats the text along with the box positions */
-  .projectBox {
+  /* .projectBox {
     display: inline-block;
     margin-right: 10px;
     margin-top: 3%;
     width: 30%;
-  }
+  } */
 
   /* This affects the box sizes and shapes */
-  .projectBox .box {
+  /* .projectBox .box {
     background-color: #dafffb;
     height: 250px;
     margin-top: 30px;
-  }
+  } */
 
   /* Description box sizing and shape */
-  .projectBox .descriptBox {
+  /* .projectBox .descriptBox {
     margin-top: 3%;
-    background-color: var(--secColor);
+    background-color: #0129;
     height: 100px;
-  }
+  } */
 }
