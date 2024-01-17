@@ -2,7 +2,7 @@
   --darkBanner: #242424;
   --textColor: #dafffb;
   --backgColor: #000;
-  --underLineColor: #fca311;
+  --underLineColor: #edb992;
 
   /* Inverted */
   --lightBanner: #dbdbdb;
@@ -17,15 +17,6 @@ body {
   font-weight: 600;
   color: var(--textColor);
 }
-
-/* Light Mode */
-
-.lightMode {
-  background-color: var(--backgColor2);
-  color: var(--textColorDark);
-}
-
-/* Emd of Light Mode */
 
 .container {
   width: 80%;
@@ -256,7 +247,7 @@ nav a:hover {
   }
 
   header {
-    position: relative;
+    position: fixed;
   }
 
   /* All the boxes where my projects will be show cased  */
@@ -289,3 +280,44 @@ nav a:hover {
     height: 100px;
   } */
 }
+
+/* Light Mode */
+
+.lightMode {
+  background-color: var(--backgColor2);
+  color: var(--textColorDark);
+}
+
+.toggleMode button {
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+}
+
+/* Make the header lightbanner */
+.lightMode header {
+  background-color: var(--lightBanner);
+}
+
+.lightMode nav a {
+  color: var(--textColorDark);
+}
+
+.lightMode nav a:hover {
+  color: var(--underLineColor);
+}
+
+/* Change any aspects of bigger screens of lightmode */
+@media screen and (min-width: 890px) {
+  .lightMode nav a::before {
+    background: var(--textColorDark);
+  }
+
+  .toggleMode button {
+    left: auto;
+    right: 0;
+    top: 0;
+  }
+}
+/* Emd of Light Mode */

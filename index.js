@@ -16,4 +16,12 @@ function toggleMode() {
     linkedinImg.src = "assets/socialsLight/In-White-128@2x.png";
     xImg.src = "assets/socialsLight/logo-white.png";
   }
+
+  if (!lightMode) {
+    body.classList.add("light-mode");
+    body.style.setProperty("--darkBanner", "var(--lightBanner)");
+  } else {
+    body.classList.remove("light-mode");
+    body.style.setProperty("--darkBanner", "var(--originalDarkBanner)");
+  }
 }
