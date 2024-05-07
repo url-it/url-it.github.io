@@ -16,6 +16,7 @@ body {
   font-family: "Orbitron", sans-serif;
   font-weight: 600;
   color: var(--textColor);
+  transition: background-color 0.7s ease, color 0.5s ease;
 }
 
 .container {
@@ -25,13 +26,17 @@ body {
 }
 
 header {
-  background: var(--darkBanner);
+  /* background: var(--darkBanner); */
   text-align: center;
   /* This creates the one bar thing to be in place. Do it only in mobile */
   position: fixed;
   z-index: 999;
   width: 100%;
   top: 0;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  transition: background 0.5s ease;
 }
 
 .logo {
@@ -281,6 +286,28 @@ nav a:hover {
   } */
 }
 
+/* Button class */
+
+.toggleMode button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin-top: -2px;
+}
+/* ___________ */
+
+#sun {
+  width: 25px;
+  height: 25px;
+  display: block;
+}
+
+#moon {
+  width: 25px;
+  height: 25px;
+  display: none;
+}
+
 /* Light Mode */
 
 .lightMode {
@@ -288,16 +315,9 @@ nav a:hover {
   color: var(--textColorDark);
 }
 
-.toggleMode button {
-  position: fixed;
-  z-index: 999;
-  left: 0;
-  top: 0;
-}
-
 /* Make the header lightbanner */
 .lightMode header {
-  background-color: var(--lightBanner);
+  /* background-color: var(--lightBanner); */
 }
 
 .lightMode nav a {
