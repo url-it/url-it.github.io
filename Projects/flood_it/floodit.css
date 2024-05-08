@@ -5,23 +5,9 @@
   text-align: center;
 }
 
-#gameContainer {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(10, 1fr);
-  gap: 2px;
-  width: 400px;
-  height: 400px;
-  margin: 0 auto;
-}
-
-#colorButtons {
+.gameContainer {
   display: flex;
   justify-content: center;
-  gap: 10px;
-  margin-top: 20px;
-}
-
-button {
-  padding: 10px;
+  align-items: center;
+  height: 100vh;
 }
