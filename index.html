@@ -9,19 +9,18 @@
     <link rel = "stylesheet" href = index.css>
     <script src = index.js></script>
     <link rel="icon" type="image/png" href="assets/logoUpdated.png"/>
-    <title>Hello Web 👋</title>
+    <title>U.R.L</title>
 </head>
 
 <body>
     <header>
         <div class="container">
-            <!-- <h1 class="logo">Hello World</h1> -->
             <h1 class="logo"><span class="type"></span></h1>
             <script>
                 var typed = new Typed(".type", {
-                    strings: ["Hello World", "Hola Mundo", "Bonjour Monde", "헬로 월드", "こんにちは世界","Hello World!"],
+                    strings: ["Uziel","Rivera","Lopez", "Uziel Rivera-Lopez","U.R.L"],
                     typeSpeed: 150, 
-                    backSpeed: 50,
+                    backSpeed: 65,
                     loop: false,
                     cursorChar:"_",
                     onComplete: (self) => {self.cursor.remove()}
@@ -32,8 +31,15 @@
                 <ul>
                     <li><a href="/">Home</a></li>
                     <li><a href="About/about.html#about_me">About</a></li>
-                    <li><a href="">Projects</a></li> 
-                    <li><a href="">𝕏</a></li>
+                    <li><a href="Projects/flood_it/Floodit.html">Archive</a></li> 
+                    <li>
+                        <div class="toggleMode">
+                            <button onclick="toggleMode()">
+                                <img id="sun" src="assets/sunL.png" alt="lightMode">
+                                <img id="moon" src="assets/moonD.png" alt="darkMode">
+                            </button>
+                        </div>
+                    </li>
                 </ul>
             </nav>
             <label for="nav-toggle" class="nav-toggle-label">
@@ -41,18 +47,31 @@
         </div>
     </header>
 
-    <!-- <div class="projectBar">
+    <div class="projectArea">
         <div class="projectBox">
-            <h2 class="currentProject">Current Project</h2>
+            <h2 class="titleProject">Current Project</h2>
             <div class="box"></div>
             <div class="descriptBox"></div>
 
         </div>
         <div class="projectBox">
-            <h2 class="lastProject">Last Project</h2>
+            <h2 class="titleProject">Last Project</h2>
             <div class="box"></div>
             <div class="descriptBox"></div>
         </div>
-    </div>  -->
+    </div> 
+
+    <div class="socialMedia">
+        <ul>
+            <li><a href="https://github.com/url-it" target="_blank"><img id="github-image" src="/assets/socialsLight/github-mark-white.png" alt="Github"></a></li>
+            <li><a href="https://www.linkedin.com/in/uzielrivlop/" target="_blank"><img id="linkedln-image" src="/assets/socialsLight/In-White-128@2x.png" alt="Linkedln"></a></li>
+            <li><a href="https://twitter.com/theURL_" target="_blank"><img id="x-logo"src="/assets/socialsLight/logo-white.png" alt="X"></a></li>
+
+            <!-- <li><a href="https://github.com/url-it" target="_blank"><img id="github-image" src="assets/socialsDark/github-mark.png" alt="Github"></a></li>
+            <li><a href="https://www.linkedin.com/in/uzielrivlop/" target="_blank"><img id="linkedln-image" src="assets/socialsDark/In-Black-128@2x.png" alt="Linkedln"></a></li>
+            <li><a href="https://twitter.com/theURL_" target="_blank"><img id="x-logo"src="assets/socialsDark/logo-black.png" alt="X"></a></li> -->
+        </ul>
+    </div>
+
 </body> 
 </html>
