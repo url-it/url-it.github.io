@@ -10,15 +10,15 @@ function toggleMode() {
   const moonD = document.getElementById("moon");
 
   if (githubImg.src.endsWith("github-mark-white.png")) {
-    githubImg.src = "assets/socialsDark/github-mark.png";
-    linkedinImg.src = "assets/socialsDark/In-Black-128@2x.png";
-    xImg.src = "assets/socialsDark/logo-black.png";
+    githubImg.src = "/assets/socialsDark/github-mark.png";
+    linkedinImg.src = "/assets/socialsDark/In-Black-128@2x.png";
+    xImg.src = "/assets/socialsDark/logo-black.png";
     sunL.style.display = "none";
     moonD.style.display = "block";
   } else {
-    githubImg.src = "assets/socialsLight/github-mark-white.png";
-    linkedinImg.src = "assets/socialsLight/In-White-128@2x.png";
-    xImg.src = "assets/socialsLight/logo-white.png";
+    githubImg.src = "/assets/socialsLight/github-mark-white.png";
+    linkedinImg.src = "/assets/socialsLight/In-White-128@2x.png";
+    xImg.src = "/assets/socialsLight/logo-white.png";
     sunL.style.display = "block";
     moonD.style.display = "none";
   }
