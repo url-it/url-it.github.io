@@ -293,6 +293,7 @@ nav a:hover {
   border: none;
   cursor: pointer;
   margin-top: -2px;
+  user-select: none;
 }
 /* ___________ */
 
