@@ -35,11 +35,15 @@ function toggleMode() {
   const moon = document.getElementById("moon");
 }
 
-// window.addEventListener("scroll", function () {
-//   var header = document.querySelector("header");
-//   if (window.pageYOffset > 25) {
-//     header.style.setProperty("background", "var(--darkBanner)");
-//   } else {
-//     header.style.setProperty("background", "");
-//   }
-// });
+window.addEventListener("scroll", function () {
+  var header = document.querySelector("header");
+  if (window.pageYOffset > 25) {
+    if (lightMode) {
+      header.style.setProperty("background", "var(--darkBanner)");
+    } else {
+      header.style.setProperty("background", "var(--lightBanner)");
+    }
+  } else {
+    header.style.setProperty("background", "");
+  }
+});
