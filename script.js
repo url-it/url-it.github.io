@@ -83,7 +83,7 @@ const PROJECTS = [
     title: "Automated Simplification of Clinical Discharge Summaries Using Large Language Models",
     description: "In development — Building an LLM-based pipeline to automatically simplify clinical discharge summaries into patient-friendly language, bridging the communication gap between medical documentation and patient understanding.",
     year: "2026",
-    link: "#",
+    link: "",
   },
   {
     title: "Large-Scale Spatial Machine Learning for 3D Surface Topology in Hydrological Application",
