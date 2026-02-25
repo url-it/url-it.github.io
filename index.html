@@ -1,86 +1,23 @@
-<!DOCTYPE html>
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uziel Rivera-Lopez</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-root">
+      <div class="layout-shell">
+        <aside id="sidebar" class="sidebar-column" aria-label="Profile"></aside>
 
-    <meta charset="utf-8">
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel = "stylesheet" href = index.css>
-    <script src = index.js></script>
-    <link rel="icon" type="image/png" href="assets/logoUpdated.png"/>
-    <title>U.R.L</title>
-</head>
-
-<body>
-    <header>
-        <div class="container">
-            <h1 class="logo"><span class="type"></span></h1>
-            <script>
-                var typed = new Typed(".type", {
-                    strings: ["Uziel","Rivera","Lopez", "Uziel Rivera-Lopez","U.R.L"],
-                    typeSpeed: 150, 
-                    backSpeed: 65,
-                    loop: false,
-                    cursorChar:"_",
-                    onComplete: (self) => {self.cursor.remove()}
-                })
-            </script>
-            <input type="checkbox" id="nav-toggle" class="nav-toggle">
-            <nav>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="AboutMe/about.html">About</a></li>
-                    <li><a href="Projects/flood_it/Floodit.html">Archive</a></li> 
-                    <li>
-                        <div class="toggleMode">
-                            <button onclick="toggleMode()">
-                                <img id="sun" src="assets/sunL.png" alt="lightMode">
-                                <img id="moon" src="assets/moonD.png" alt="darkMode">
-                            </button>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-            <label for="nav-toggle" class="nav-toggle-label">
-                <span></span>
-        </div>
-    </header>
-
-    <div class="projectArea">
-        <div class="projectBox">
-            <h2 class="titleProject">Current Project</h2>
-            <div class="box">
-                <a href="Projects/flood_it/Floodit.html">
-                    a
-                </a>
-            </div>
-            <div class="descriptBox"></div>
-
-        </div>
-        <div class="projectBox">
-            <h2 class="titleProject">Last Project</h2>
-            <div class="box">
-                <a href="Projects/Mancala/mancala.html">
-                    a
-                </a>
-            </div>
-            <div class="descriptBox"></div>
-        </div>
-    </div> 
-
-    <div class="socialMedia">
-        <ul>
-            <li><a href="https://github.com/url-it" target="_blank"><img id="github-image" src="/assets/socialsLight/github-mark-white.png" alt="Github"></a></li>
-            <li><a href="https://www.linkedin.com/in/uzielrivlop/" target="_blank"><img id="linkedln-image" src="/assets/socialsLight/In-White-128@2x.png" alt="Linkedln"></a></li>
-            <li><a href="https://twitter.com/theURL_" target="_blank"><img id="x-logo"src="/assets/socialsLight/logo-white.png" alt="X"></a></li>
-
-            <!-- <li><a href="https://github.com/url-it" target="_blank"><img id="github-image" src="assets/socialsDark/github-mark.png" alt="Github"></a></li>
-            <li><a href="https://www.linkedin.com/in/uzielrivlop/" target="_blank"><img id="linkedln-image" src="assets/socialsDark/In-Black-128@2x.png" alt="Linkedln"></a></li>
-            <li><a href="https://twitter.com/theURL_" target="_blank"><img id="x-logo"src="assets/socialsDark/logo-black.png" alt="X"></a></li> -->
-        </ul>
+        <section class="content-column">
+          <nav id="navigation" class="top-nav" aria-label="Main navigation"></nav>
+          <main id="main-content" class="main-content" aria-live="polite"></main>
+        </section>
+      </div>
     </div>
 
-</body> 
+    <script src="script.js"></script>
+  </body>
 </html>
