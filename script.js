@@ -2,14 +2,23 @@ const PROFILE = {
   name: "Uziel Rivera-Lopez",
   location: "Bloomington, Indiana",
   email: "uzrivera@iu.edu",
-  github: "github.com/url-it",  
+  github: "github.com/url-it",
   linkedin: "linkedin.com/in/uzielrivlop/",
   imagePlaceholder: false,
 };
 
 const EDUCATION = [
-  { degree: "M.S. in Data Science" , school: "Indiana University Bloomington", year: "2026"}, 
-  { degree: "B.S. in Computer Science, Specialization in Artificial Intelligence", school: "Indiana University Bloomington", year: "2025" },
+  {
+    degree: "M.S. in Data Science",
+    school: "Indiana University Bloomington",
+    year: "2026",
+  },
+  {
+    degree:
+      "B.S. in Computer Science, Specialization in Artificial Intelligence",
+    school: "Indiana University Bloomington",
+    year: "2025",
+  },
 ];
 
 const TIMELINE_JOBS = [
@@ -25,7 +34,8 @@ const TIMELINE_JOBS = [
     title: "Intern",
     company: "ACS Division of Medicinal Chemistry",
     date: "Summer 2022",
-    description: "Conducted in-depth research on current chemistry trends and subjects",
+    description:
+      "Conducted in-depth research on current chemistry trends and subjects",
   },
   {
     id: 3,
@@ -39,7 +49,8 @@ const TIMELINE_JOBS = [
     title: "Data Analyst",
     company: "Melvin & Bren Simon Cancer Center",
     date: "Summer 2024",
-    description: "Analytics on Multiple Myeloma cancer test runs of a possible treatement",
+    description:
+      "Analytics on Multiple Myeloma cancer test runs of a possible treatement",
   },
   {
     id: 5,
@@ -60,125 +71,147 @@ const TIMELINE_JOBS = [
     title: "Conference Assistant",
     company: "IU ResLife",
     date: "May 2025 - August 2025",
-    description: "Provided assistant, and organization of conferences hosted at IU",
+    description:
+      "Provided assistant, and organization of conferences hosted at IU",
   },
   {
     id: 7,
     title: "REU Researcher",
     company: "Da Yan, IUB Luddy",
     date: "May 2025 - December 2025",
-    description: "Working under Dr. Da Yan on leveraging UAV LiDAR data to analyze the environmental impact of the March 2023 EF3 tornado at McCormick’s Creek State Park.",
+    description:
+      "Working under Dr. Da Yan on leveraging UAV LiDAR data to analyze the environmental impact of the March 2023 EF3 tornado at McCormick’s Creek State Park.",
   },
   {
     id: 8,
     title: "Lead Teaching Assistant",
     company: "IUB Luddy",
     date: "March 2025 - Present",
-    description: "Leading the course for CSCI-C200, with 12+ TAs to manage, and 500+ students for content"
+    description:
+      "Leading the course for CSCI-C200, with 12+ TAs to manage, and 500+ students for content",
   },
 ];
 
 const PROJECTS = [
   {
-    title: "Automated Simplification of Clinical Discharge Summaries Using Large Language Models",
-    description: "In development — Building an LLM-based pipeline to automatically simplify clinical discharge summaries into patient-friendly language, bridging the communication gap between medical documentation and patient understanding.",
+    title: "Grade Sorter",
+    description:
+      'Grade Sorter, is a specialized web application designed for educators to visualize, analyze, and manipulate student performance data exported from the Canvas LMS. It transforms static CSV files into interactive statistical dashboards, allowing for real-time "what-if" scenarios regarding grade curving.',
+    year: "2026",
+    link: "https://quadmatic.onrender.com",
+  },
+
+  {
+    title:
+      "Automated Simplification of Clinical Discharge Summaries Using Large Language Models",
+    description:
+      "In development — Building an LLM-based pipeline to automatically simplify clinical discharge summaries into patient-friendly language, bridging the communication gap between medical documentation and patient understanding.",
     year: "2026",
     link: "",
   },
   {
-    title: "Large-Scale Spatial Machine Learning for 3D Surface Topology in Hydrological Application",
-    description: "Under Dr. Da Yan, this NSF REU research developing an interactive annotation tool that aligns bird's-eye view imagery with 3D UAV LiDAR point clouds to label tornado-induced forest disturbances, supporting deep learning models for geomorphic change quantification in storm-affected environments.",
+    title:
+      "Large-Scale Spatial Machine Learning for 3D Surface Topology in Hydrological Application",
+    description:
+      "Under Dr. Da Yan, this NSF REU research developing an interactive annotation tool that aligns bird's-eye view imagery with 3D UAV LiDAR point clouds to label tornado-induced forest disturbances, supporting deep learning models for geomorphic change quantification in storm-affected environments.",
     year: "2025",
     link: "https://github.com/url-it/uav-lidar-tornado-geomorphic-analysis/blob/main/uzielRiveraLopez_FA25.pdf",
   },
   {
-    title: "PhysiCell training apps: A case study for creating interactive training materials for scientific software",
-    description: "Working with the MathCancer Lab, we built a collection of interactive Google Colab training applications for PhysiCell, an open-source agent-based multicellular simulator, covering core cell behaviors including mechanics, motility, secretion, death, cycle, and microenvironment modeling.",
+    title:
+      "PhysiCell training apps: A case study for creating interactive training materials for scientific software",
+    description:
+      "Working with the MathCancer Lab, we built a collection of interactive Google Colab training applications for PhysiCell, an open-source agent-based multicellular simulator, covering core cell behaviors including mechanics, motility, secretion, death, cycle, and microenvironment modeling.",
     year: "2024",
     link: "https://github.com/url-it/PhysiCell_Training_Apps",
   },
-{
-  title: "Synergistic Cytotoxic Effects of p62 Modulation and Proteasome Inhibitors on Multiple Myeloma: Molecular Mechanisms and Therapeutic Potential",
-  description: "Working with Dr. Suvannasankha's team, this research is on investigating the synergistic cytotoxic effects of p62 modulation (XRK3F2) and proteasome inhibition (carfilzomib) in Multiple Myeloma, exploring molecular mechanisms through RNA sequencing, western blotting, and gene expression analysis across MM cell lines.",
-  year: "2024",
-  link: "https://github.com/url-it/p62-carfilzomib-synergy-MM/blob/main/uzielRiveraLopezPoster2024_fv1.pdf",
-},
+  {
+    title:
+      "Synergistic Cytotoxic Effects of p62 Modulation and Proteasome Inhibitors on Multiple Myeloma: Molecular Mechanisms and Therapeutic Potential",
+    description:
+      "Working with Dr. Suvannasankha's team, this research is on investigating the synergistic cytotoxic effects of p62 modulation (XRK3F2) and proteasome inhibition (carfilzomib) in Multiple Myeloma, exploring molecular mechanisms through RNA sequencing, western blotting, and gene expression analysis across MM cell lines.",
+    year: "2024",
+    link: "https://github.com/url-it/p62-carfilzomib-synergy-MM/blob/main/uzielRiveraLopezPoster2024_fv1.pdf",
+  },
 
-    {
+  {
     title: "Registry Database for Fontan Liver Patients ",
-    description: "Research internship project focused on establishing a REDCap patient registry for Fontan-associated liver disease at Indiana University, contributing to the understanding of long-term hepatic complications in congenital heart disease patients.",
+    description:
+      "Research internship project focused on establishing a REDCap patient registry for Fontan-associated liver disease at Indiana University, contributing to the understanding of long-term hepatic complications in congenital heart disease patients.",
     year: "2021",
     link: "https://iu.mediaspace.kaltura.com/media/t/1_km513szi/215165513",
   },
 ];
 
 const AWARDS_PRESENTATIONS = [
-    {
-    course:  "Luddy Computer Science Fellowship",
+  {
+    course: "Luddy Computer Science Fellowship",
     role: "Fellowship",
     description: "",
     year: "2026",
   },
   {
-    course:  "Hudson & Holland Fellowship",
+    course: "Hudson & Holland Fellowship",
     role: "Fellowship",
     description: "",
     year: "2026",
   },
-      {
-    course:  "Luddy Winter Research Symposium",
+  {
+    course: "Luddy Winter Research Symposium",
     role: "Presented Quantifying Geomorphic Change Using UAV LiDAR & Deep Learning",
     description: "",
     year: "Dec 2025",
   },
-    {
-    course:  "Indiana University Undergraduate Summer Presentation",
+  {
+    course: "Indiana University Undergraduate Summer Presentation",
     role: "Presented Quantifying Geomorphic Change Using UAV LiDAR & Deep Learning",
     description: "",
     year: "July 2025",
   },
-    {
-    course:  "Luddy Spring Research Symposium",
+  {
+    course: "Luddy Spring Research Symposium",
     role: "Presented Integration of PhysiCell Training Apps With Google Colab to Enhance Accessibility",
     description: "",
     year: "April 2025",
   },
 
   {
-    course:  "Luddy Fall Research Symposium",
+    course: "Luddy Fall Research Symposium",
     role: "Presented Integration of PhysiCell Training Apps With Google Colab to Enhance Accessibility",
     description: "",
     year: "Dec 2024",
   },
 
-    {
- course: "Simon Comprehensive Cancer Center – DICR Spotlight",
-  role: "Featured Researcher, Cancer Research Program",
-  description: "Featured by the Melvin and Bren Simon Comprehensive Cancer Center for summer research under Dr. Attaya Suvannasankha, exploring the intersection of AI and cancer biology through wet lab techniques and data analysis. ",
-      link: "https://cancer.iu.edu/about/news/stories/2024-07-25-dicr-spotlight.html",
-  year: "July 2024",
-  },
-  
   {
-    course:  "Peters Computer Science Program",
+    course: "Simon Comprehensive Cancer Center – DICR Spotlight",
+    role: "Featured Researcher, Cancer Research Program",
+    description:
+      "Featured by the Melvin and Bren Simon Comprehensive Cancer Center for summer research under Dr. Attaya Suvannasankha, exploring the intersection of AI and cancer biology through wet lab techniques and data analysis. ",
+    link: "https://cancer.iu.edu/about/news/stories/2024-07-25-dicr-spotlight.html",
+    year: "July 2024",
+  },
+
+  {
+    course: "Peters Computer Science Program",
     role: "Scholarship",
     description: "",
     year: "2022-2025",
   },
   {
-    course:  "Indiana Excellence Scholarship (formerly the Provost's Scholarship)",
-    role: "Scholarship",
-    description: "",
-    year: "2022-2025",
-  },
-    {
-    course:  "Luddy and Hudson & Holland Partnership",
+    course:
+      "Indiana Excellence Scholarship (formerly the Provost's Scholarship)",
     role: "Scholarship",
     description: "",
     year: "2022-2025",
   },
   {
-    course:  "Arts & Sciences and Hudson & Holland Partnership",
+    course: "Luddy and Hudson & Holland Partnership",
+    role: "Scholarship",
+    description: "",
+    year: "2022-2025",
+  },
+  {
+    course: "Arts & Sciences and Hudson & Holland Partnership",
     role: "Scholarship",
     description: "",
     year: "2022-2025",
@@ -361,7 +394,8 @@ function renderTimeline() {
 }
 
 function renderHomeView() {
-  const educationItems = EDUCATION.map((edu, idx) => `
+  const educationItems = EDUCATION.map(
+    (edu, idx) => `
     <li class="education-item">
       <div class="education-left">
         ${idx === 0 ? iconChevronRight(20) : iconCheckCircle(20)}
@@ -369,7 +403,8 @@ function renderHomeView() {
       </div>
       <span class="education-year font-primary">${escapeHtml(edu.year)}</span>
     </li>
-  `).join("");
+  `,
+  ).join("");
 
   return `
     <div class="animate-fade-in">
@@ -400,7 +435,8 @@ This "builder" mindset defines my approach to infrastructure. I treat my courses
 }
 
 function renderProjectsView() {
-  const rows = PROJECTS.map((project) => `
+  const rows = PROJECTS.map(
+    (project) => `
     <div class="list-row">
       <div class="list-row-main">
         <h3 class="font-primary">
@@ -413,7 +449,8 @@ function renderProjectsView() {
       </div>
       <span class="list-row-year font-primary">${escapeHtml(project.year)}</span>
     </div>
-  `).join("");
+  `,
+  ).join("");
 
   return `
     <div class="animate-fade-in">
@@ -426,7 +463,8 @@ function renderProjectsView() {
 }
 
 function renderAwardsView() {
-  const rows = AWARDS_PRESENTATIONS.map((role) => `
+  const rows = AWARDS_PRESENTATIONS.map(
+    (role) => `
     <div class="list-row">
       <div class="list-row-main">
         <h3 class="font-primary">
@@ -442,7 +480,8 @@ function renderAwardsView() {
       </div>
       <span class="list-row-year font-primary">${escapeHtml(role.year)}</span>
     </div>
-  `).join("");
+  `,
+  ).join("");
 
   return `
     <div class="animate-fade-in">
