@@ -107,7 +107,7 @@ const PROJECTS = [
     description:
       "In development — Building an LLM-based pipeline to automatically simplify clinical discharge summaries into patient-friendly language, bridging the communication gap between medical documentation and patient understanding.",
     year: "2026",
-    link: "",
+    link: "assets/mid_clinical_nlp_presentation.pdf",
   },
   {
     title:
