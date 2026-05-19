@@ -94,6 +94,16 @@ const TIMELINE_JOBS = [
 
 const PROJECTS = [
   {
+    title:
+      "Automated Simplification of Clinical Discharge Summaries Using Large Language Models",
+    description:
+      "In development — Building an LLM-based pipeline to automatically simplify clinical discharge summaries into patient-friendly language, bridging the communication gap between medical documentation and patient understanding.",
+    year: "2026",
+    link: "assets/mid_clinical_nlp_presentation.pdf",
+  },
+
+
+  {
     title: "Grade Sorter",
     description:
       'Grade Sorter, is a specialized web application designed for educators to visualize, analyze, and manipulate student performance data exported from the Canvas LMS. It transforms static CSV files into interactive statistical dashboards, allowing for real-time "what-if" scenarios regarding grade curving.',
@@ -103,20 +113,13 @@ const PROJECTS = [
 
   {
     title:
-      "Automated Simplification of Clinical Discharge Summaries Using Large Language Models",
-    description:
-      "In development — Building an LLM-based pipeline to automatically simplify clinical discharge summaries into patient-friendly language, bridging the communication gap between medical documentation and patient understanding.",
-    year: "2026",
-    link: "assets/mid_clinical_nlp_presentation.pdf",
-  },
-  {
-    title:
       "Large-Scale Spatial Machine Learning for 3D Surface Topology in Hydrological Application",
     description:
       "Under Dr. Da Yan, this NSF REU research developing an interactive annotation tool that aligns bird's-eye view imagery with 3D UAV LiDAR point clouds to label tornado-induced forest disturbances, supporting deep learning models for geomorphic change quantification in storm-affected environments.",
     year: "2025",
     link: "https://github.com/url-it/uav-lidar-tornado-geomorphic-analysis/blob/main/uzielRiveraLopez_FA25.pdf",
   },
+
   {
     title:
       "PhysiCell training apps: A case study for creating interactive training materials for scientific software",
