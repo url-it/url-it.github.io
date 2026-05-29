@@ -86,10 +86,20 @@ const TIMELINE_JOBS = [
     id: 8,
     title: "Lead Teaching Assistant",
     company: "IUB Luddy",
-    date: "March 2025 - Present",
+    date: "March 2025 - May 2026",
     description:
       "Leading the course for CSCI-C200, with 12+ TAs to manage, and 500+ students for content",
   },
+{
+    id: 9,
+    title: "AI Analyst",
+    company: "Accenture",
+    date: "July 2026 - Present",
+    description:
+      "Working as an AI Analyst at Accenture, creating LLM application to solve complex business problems and drive innovation for clients across various industries.",
+  },
+},
+
 ];
 
 const PROJECTS = [
@@ -119,7 +129,6 @@ const PROJECTS = [
     year: "2025",
     link: "https://github.com/url-it/uav-lidar-tornado-geomorphic-analysis/blob/main/uzielRiveraLopez_FA25.pdf",
   },
-
   {
     title:
       "PhysiCell training apps: A case study for creating interactive training materials for scientific software",
