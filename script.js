@@ -1,7 +1,8 @@
 const PROFILE = {
   name: "Uziel Rivera-Lopez",
-  location: "Bloomington, Indiana",
-  email: "uzrivera@iu.edu",
+  role: "AI Analyst @ Accenture",
+  location: "Chicago, IL",
+  email: "uzrielrivlop@gmail.com",
   github: "github.com/url-it",
   linkedin: "linkedin.com/in/uzielrivlop/",
   imagePlaceholder: false,
@@ -67,7 +68,7 @@ const TIMELINE_JOBS = [
     description: "Undergraduate Instructor for CSCI-C200",
   },
   {
-    id: 6,
+    id: 7,
     title: "Conference Assistant",
     company: "IU ResLife",
     date: "May 2025 - August 2025",
@@ -75,7 +76,7 @@ const TIMELINE_JOBS = [
       "Provided assistant, and organization of conferences hosted at IU",
   },
   {
-    id: 7,
+    id: 8,
     title: "REU Researcher",
     company: "Da Yan, IUB Luddy",
     date: "May 2025 - December 2025",
@@ -83,23 +84,21 @@ const TIMELINE_JOBS = [
       "Working under Dr. Da Yan on leveraging UAV LiDAR data to analyze the environmental impact of the March 2023 EF3 tornado at McCormick’s Creek State Park.",
   },
   {
-    id: 8,
+    id: 9,
     title: "Lead Teaching Assistant",
     company: "IUB Luddy",
     date: "March 2025 - May 2026",
     description:
       "Leading the course for CSCI-C200, with 12+ TAs to manage, and 500+ students for content",
   },
-{
-    id: 9,
+  {
+    id: 10,
     title: "AI Analyst",
     company: "Accenture",
     date: "July 2026 - Present",
     description:
       "Working as an AI Analyst at Accenture, creating LLM application to solve complex business problems and drive innovation for clients across various industries.",
   },
-},
-
 ];
 
 const PROJECTS = [
@@ -263,6 +262,10 @@ function escapeHtml(value) {
     .replaceAll("'", "&#39;");
 }
 
+function iconBriefcase(size = 18) {
+  return `<svg width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"></rect><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"></path><line x1="12" y1="12" x2="12" y2="12"></line><path d="M12 12h.01"></path></svg>`;
+}
+
 function iconMapPin(size = 18) {
   return `<svg width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6 7-11a7 7 0 1 0-14 0c0 5 7 11 7 11Z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>`;
 }
@@ -304,6 +307,11 @@ function renderSidebar() {
     <h1 class="profile-name font-primary">${escapeHtml(PROFILE.name)}</h1>
 
     <div class="contact-info font-primary">
+      <div class="contact-item">
+        ${iconBriefcase(18)}
+        <span>: ${escapeHtml(PROFILE.role)}</span>
+      </div>
+
       <div class="contact-item">
         ${iconMapPin(18)}
         <span>: ${escapeHtml(PROFILE.location)}</span>
@@ -429,6 +437,7 @@ I am a Master's student in Data Science driven by a single question: How can we 
 <p>
 My research sits at the intersection of Large Language Models (LLMs), Natural Language Processing (NLP), and Data Mining, where I focus on "deconstructing" barriers to entry. Whether I am migrating biological simulators to the cloud for the MathCancer Lab or engineering pipelines to simplify clinical discharge summaries, I build tools that empower users to understand their own data.
 </p>
+<p>
 This "builder" mindset defines my approach to infrastructure. I treat my courses like software products, building custom automation to solve operational headaches. I engineered a suite of tools—including for bulk data manipulation, visualization dashboards to simulate drop scenarios. I am passionate about applying these skills in AI to build solutions that are not just powerful, but usable. So that one day, all our questions are answered!
           </p>
         </div>
