@@ -93,6 +93,14 @@ const TIMELINE_JOBS = [
   },
   {
     id: 10,
+    title: "AI Auditor",
+    company: "Handshake AI",
+    date: "May 2026 - July 2026",
+    description:
+      "Working as an AI Auditor at Handshake AI, evaluating and auditing AI systems for fairness, transparency, and compliance with ethical standards, ensuring responsible AI deployment.",
+  },
+  {
+    id: 11,
     title: "AI Software Engineer",
     company: "Accenture",
     date: "July 2026 - Present",
