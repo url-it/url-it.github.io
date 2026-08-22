@@ -463,7 +463,7 @@ function renderHomeView() {
         <h2 class="section-title font-primary">Bio:</h2>
         <div class="bio-text font-primary">
           <p>
-I am a AI Analyst at Accenture driven by a single question: How can we use AI to make complex systems accessible to everyone?
+I am a AI Software Engineer at Accenture driven by a single question: How can we use AI to make complex systems accessible to everyone?
 </p>
 <p>
 My research sits at the intersection of Large Language Models (LLMs), Natural Language Processing (NLP), and Data Mining, where I focus on "deconstructing" barriers to entry. Whether I am migrating biological simulators to the cloud for the MathCancer Lab or engineering pipelines to simplify clinical discharge summaries, I build tools that empower users to understand their own data.
