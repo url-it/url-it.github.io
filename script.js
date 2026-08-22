@@ -93,11 +93,11 @@ const TIMELINE_JOBS = [
   },
   {
     id: 10,
-    title: "AI Analyst",
+    title: "AI Software Engineer",
     company: "Accenture",
     date: "July 2026 - Present",
     description:
-      "Working as an AI Analyst at Accenture, creating LLM application to solve complex business problems and drive innovation for clients across various industries.",
+      "Working as an AI Software Engineer at Accenture, creating LLM application to solve complex business problems and drive innovation for clients across various industries.",
   },
 ];
 
