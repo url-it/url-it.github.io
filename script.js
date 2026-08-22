@@ -1,6 +1,6 @@
 const PROFILE = {
   name: "Uziel Rivera-Lopez",
-  role: "AI Analyst @ Accenture",
+  role: "AI SWE @ Accenture",
   location: "Chicago, IL",
   email: "uzrielrivlop@gmail.com",
   github: "github.com/url-it",
@@ -110,7 +110,6 @@ const PROJECTS = [
     year: "2026",
     link: "assets/mid_clinical_nlp_presentation.pdf",
   },
-
 
   {
     title: "Grade Sorter",
@@ -286,6 +285,14 @@ function iconExternalLink(size = 16) {
   return `<svg width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><path d="M15 3h6v6"></path><path d="m10 14 11-11"></path></svg>`;
 }
 
+function iconSun(size = 20) {
+  return `<svg width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><line x1="12" y1="2" x2="12" y2="5"></line><line x1="12" y1="19" x2="12" y2="22"></line><line x1="2" y1="12" x2="5" y2="12"></line><line x1="19" y1="12" x2="22" y2="12"></line><line x1="4.93" y1="4.93" x2="7.05" y2="7.05"></line><line x1="16.95" y1="16.95" x2="19.07" y2="19.07"></line><line x1="16.95" y1="7.05" x2="19.07" y2="4.93"></line><line x1="4.93" y1="19.07" x2="7.05" y2="16.95"></line></svg>`;
+}
+
+function iconMoon(size = 20) {
+  return `<svg width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>`;
+}
+
 function iconChevronRight(size = 20) {
   return `<svg width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>`;
 }
@@ -336,13 +343,20 @@ function renderSidebar() {
 }
 
 function renderNavigation() {
-  navEl.innerHTML = TABS.map(
-    (tab) => `
+  const isDark = document.documentElement.classList.contains("dark");
+
+  navEl.innerHTML =
+    TABS.map(
+      (tab) => `
       <button class="nav-button font-primary ${tab.id === activeTab ? "active" : ""}" data-tab="${tab.id}" type="button">
         ${tab.label}
       </button>
     `,
-  ).join("");
+    ).join("") +
+    `<button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle theme" aria-pressed="${isDark}">
+      <span class="theme-icon-sun">${iconSun(20)}</span>
+      <span class="theme-icon-moon">${iconMoon(20)}</span>
+    </button>`;
 
   navEl.querySelectorAll(".nav-button").forEach((button) => {
     button.addEventListener("click", () => {
@@ -354,6 +368,15 @@ function renderNavigation() {
       renderNavigation();
       renderMain();
     });
+  });
+
+  document.getElementById("themeToggle").addEventListener("click", () => {
+    const html = document.documentElement;
+    const nowDark = html.classList.toggle("dark");
+    localStorage.setItem("theme", nowDark ? "dark" : "light");
+    document
+      .getElementById("themeToggle")
+      .setAttribute("aria-pressed", String(nowDark));
   });
 }
 
@@ -432,7 +455,7 @@ function renderHomeView() {
         <h2 class="section-title font-primary">Bio:</h2>
         <div class="bio-text font-primary">
           <p>
-I am a Master's student in Data Science driven by a single question: How can we use AI to make complex systems accessible to everyone?
+I am a AI Analyst at Accenture driven by a single question: How can we use AI to make complex systems accessible to everyone?
 </p>
 <p>
 My research sits at the intersection of Large Language Models (LLMs), Natural Language Processing (NLP), and Data Mining, where I focus on "deconstructing" barriers to entry. Whether I am migrating biological simulators to the cloud for the MathCancer Lab or engineering pipelines to simplify clinical discharge summaries, I build tools that empower users to understand their own data.
